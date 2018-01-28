@@ -8,7 +8,6 @@ class Song:
     def __init__(self, name, elo):
         self.name = name
         self.elo = elo
-        self.elo= 1200
         
     def getName(self):
         return self.name
@@ -52,7 +51,7 @@ def readFile():
         lines = f.readlines()
         for i in lines:
             line = i.split(" ")
-            elo = line[0]
+            elo = int(line[0])
             del line[0]
             line = " ".join(line)
             line = line.rstrip()
