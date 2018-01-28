@@ -56,9 +56,7 @@ def readFile():
             line = " ".join(line)
             line = line.rstrip()
             songs.append(Song(line, elo))
-            
-            
-        
+   
         
 def cycleSongs():
     song1 = random.choice(songs)
@@ -66,11 +64,11 @@ def cycleSongs():
     while song1.getName() == song2.getName():
         song2 = random.choice(songs)
         
-    result = input("0: " + song1.getName() + " <=> 1: " + song2.getName() + " ------ 2: Exit\n")
+    result = input("1: " + song1.getName() + " <=> 2: " + song2.getName() + " ------ any other key: Exit\n")
        
-    if int(result) == 0:
+    if result == "1":
         compareSongs(song1, song2, 1)
-    elif (int(result) == 1):
+    elif (result == "2"):
         compareSongs(song1, song2, 0)
         
     return result
@@ -89,8 +87,8 @@ def printSongs():
             
 #fillSongs("songs.txt")
 readFile()
-result = 0
-while int(result) < 2:
+result = "1"
+while result == "1" or result == "2":
     result = cycleSongs()
     
 printSongs()
