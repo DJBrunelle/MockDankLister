@@ -118,8 +118,8 @@ def printSongs():
                 " " + songs[i].getName() + "\n")
 
 
-fillSongs("songs.json")
-#readFile()
+#fillSongs("songs.json")
+readFile()
 result = "1"
 while result == "1" or result == "2":
     result = cycleSongs()
