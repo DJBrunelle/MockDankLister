@@ -82,8 +82,11 @@ def cycleSongs():
         index1 += 1
         
     index2 = index1 + 1
-    if index2 >= len(songs):
-        index2 = 0
+    while songs[index2].numTests >= maxTests:
+        index2 += 1
+        if index2 >= len(songs):
+            maxTests += 1
+            index2 = 0
 
     song1 = songs[index1]
     song2 = songs[index2]
@@ -95,6 +98,8 @@ def cycleSongs():
         compareSongs(song1, song2, 1)
     elif (result == "2"):
         compareSongs(song1, song2, 0)
+
+    songs.sort(key=lambda x: x.getElo(), reverse=True)
 
     return result
 
