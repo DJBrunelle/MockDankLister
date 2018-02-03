@@ -77,18 +77,13 @@ def cycleSongs():
 
     if numLessThanMax <= 1:
         maxTests += 1
-    index1 = random.randint(0, len(songs) - 1)
-    index2 = random.randint(0, len(songs) - 1)
+    index1 = 0
     while songs[index1].numTests >= maxTests:
         index1 += 1
-        if index1 == len(songs):
-            index1 = 0
-
-    while songs[index2].numTests >= maxTests or \
-          songs[index2].getName() == songs[index1].getName():
-        index2 += 1
-        if index2 == len(songs):
-            index2 = 0
+        
+    index2 = index1 + 1
+    if index2 >= len(songs):
+        index2 = 0
 
     song1 = songs[index1]
     song2 = songs[index2]
@@ -118,8 +113,8 @@ def printSongs():
                 " " + songs[i].getName() + "\n")
 
 
-#fillSongs("songs.json")
-readFile()
+fillSongs("songs.json")
+#readFile()
 result = "1"
 while result == "1" or result == "2":
     result = cycleSongs()
