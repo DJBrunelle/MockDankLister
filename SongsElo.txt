@@ -14,18 +14,12 @@
 1246 4 Cinema - Radio Edit
 1246 4 Manslaughter (VIP Mix)
 1246 4 Error Code
-1234 3 Seeya
-1234 3 Glorious Morning
-1234 3 8-Bit Lightsaber - Original Mix
-1234 3 I Remember
-1234 3 Lone Digger
-1234 3 Till It's Over
-1234 3 Adventures
-1234 3 Space Jam
-1234 3 Bass Jam
-1234 3 Sledgehammer - Original Mix
-1234 3 Too Simple
-1234 3 Down The Road
+1246 4 Seeya
+1246 4 Lone Digger
+1246 4 Too Simple
+1245 4 I Remember
+1245 4 Space Jam
+1245 4 Sledgehammer - Original Mix
 1233 3 Finale
 1233 3 U R So Fucked
 1233 3 Cheat Codes
@@ -46,6 +40,12 @@
 1223 4 Pay No Mind
 1223 4 Shine A Light - Flight Facilities Remix
 1223 4 Where Did I Go? - Dillon Francis & Kill Paris Remix
+1222 4 Down The Road
+1222 4 Bass Jam
+1222 4 Adventures
+1222 4 Till It's Over
+1222 4 8-Bit Lightsaber - Original Mix
+1222 4 Glorious Morning
 1222 4 Ism - Original Mix
 1212 3 Freefall - xKore Remix
 1212 3 Edge of Infinity (feat. Minnesota)
